@@ -1,0 +1,165 @@
+
+.center-dialog .tip{
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+.center-dialog .label{
+	font-size: 16px;
+	color: #B3B3B3;
+	text-align: right;
+	padding-right: 10px;
+}
+.center-dialog .text{
+	font-size: 16px;
+}
+.center-dialog td{
+	/*height: 52px;*/
+	padding: 8px 0;
+}
+.center-dialog .txt{
+	width: 258px;
+	height: 50px;
+	border: 1px solid #DFDFDF;
+	padding: 0 10px;
+	font-size: 16px;
+	/*font-weight: 800;*/
+}
+.center-dialog .txt-min{
+	width: 96px;
+	float: left;
+}
+.center-dialog input.icon{
+	width: 218px;
+	padding-left: 50px;
+	background-image: url(https://static.hehenian.com/p/js/center/dialog/icon.png);
+	background-repeat: no-repeat;
+}
+.center-dialog select{
+	height: 50px;
+	border: 1px solid #DFDFDF;
+}
+.center-dialog input.j-psw,
+.center-dialog input.j-psw2{
+	background-position: 0 0;
+}
+.center-dialog input.j-name{
+	background-position: 0 -50px;
+}
+.center-dialog input.j-id{
+	background-position: 0 -100px;
+}
+.center-dialog input.j-recommend{
+	background-image: url(https://static.hehenian.com/p/images/login.png);
+	background-position: 10px -430px;
+}
+.center-dialog .input-btn{
+	float: right;
+	height: 52px;
+	width: 152px;
+	display: inline-block;
+	line-height: 52px;
+	text-align: center;
+	background: #fff3f3;
+	color: #999;
+	text-decoration: none;
+}
+.center-dialog .input-btn.disabled{
+    background: #ccc;
+}
+.center-dialog .submit{
+	display: block;
+	width: 280px;
+	height: 52px;
+	background: #F64349;
+	text-align: center;
+	line-height: 52px;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	/*margin-top: 20px;*/
+}
+.center-dialog .submit:hover,
+.center-dialog .input-btn:hover,
+.center-dialog-success .btn:hover{
+	background: #D1393B;
+}
+.center-dialog .error{
+	font-size: 12px;
+	color: #F64349;
+	padding-top: 10px;
+}
+.center-dialog a.disabled,
+.center-dialog a.disabled:hover{
+	background: #CBCBCB;
+	color: #959595;
+	cursor: default;
+}
+
+.center-dialog-success .text{
+	height: 74px;
+	line-height: 74px;
+	font-size: 24px;
+	background: url(https://static.hehenian.com/p/js/center/dialog/success.png) 0 50% no-repeat;
+	padding-left: 90px;
+}
+.center-dialog-success .ft{
+	padding: 30px 0 0 50px;
+	width: 314px;
+	text-align: right;
+}
+.center-dialog-success .btn{
+	display: inline-block;
+	width: 277px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	background: #F64349;
+	text-decoration: none;
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+.center-dialog-success p{
+	font-size: 16px;
+}
+.center-dialog-success a{
+	color: #F64349
+}
+/*.center-dialog #error{
+	border: 1px solid #FA8F90;
+	background: #FFDBD7 url(https://static.hehenian.com/p/js/center/dialog/error.png) 5px 50% no-repeat;
+	color: #F64349;
+	font-size: 12px;
+	padding:5px 10px;
+	padding-left: 30px;
+	display: none;
+	margin-top: 8px;
+}*/
+.center-dialog .cert-code input,
+.center-dialog .cert-code img{
+	float: left;
+	margin-right: 10px;
+}
+.center-dialog .cert-code img{
+	cursor: pointer;
+}
+.center-dialog .cert-code a{
+	float: left;
+	margin-top: 5px;
+	font-size: 12px;
+}
+.center-dialog .ftip{font-size: 16px;padding-top: 10px;color: #333;text-align: right;}
+.center-dialog .red{color: #F64349}
+.center-dialog input[type=checkbox]{vertical-align: -2px;}
+.center-dialog input.default{
+	color: #ccc;
+}
+
+.moneyGateway a{
+	padding: 20px;
+	display: inline-block;
+	color: #F64349;
+}
+.moneyGateway a.bd{
+	border-right: 1px solid #F64349;
+}

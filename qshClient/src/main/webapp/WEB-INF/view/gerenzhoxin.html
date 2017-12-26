@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0053)https://www.qianshenghua.com/view/center-index.jsp#!/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="/hm.js"></script><script class="$1514253031724" src="/center-route.js"></script><script class="$1514253031724" src="/main.js"></script><script class="$1514253031724" src="/centerService.js"></script><script class="$1514253031724" src="/config.js"></script><script class="$1514253031724" src="/base.js"></script><script class="$1514253031724" src="/mmRequest.js"></script><script class="$1514253031724" src="/mmPromise.js"></script><script class="$1514253031724" src="/mmHistory.js"></script><script class="$1514253031724" src="/mmState.js"></script><script class="$1514253031724" src="/mmRouter.js"></script><avalon ms-skip="1" class="avalonHide">X<style id="avalonStyle">.avalonHide{ display: none!important }</style><span ms-if="accountType==2"><a href="https://www.qianshenghua.com/view/center-index.jsp#!/safe">{{username}}</a></span><a class="hide" ms-class-show="accountType==2" ms-if="accountType==2" target="_self" href="https://www.qianshenghua.com/preOnlinePay.do">充值<i></i></a><a class="hide" ms-class-show="accountType==2" ms-if="accountType==2" target="_self" onclick="javascript:checkItems();">提现<i></i></a><li ms-class-on="nav==6" ms-visible="source==48" ms-if="source==48">
+                <a class="first" href="javascript:;" ms-click="navToggle(6)">
+                    <i class="icon icon-cai"></i> 彩住宅
+                    <i class="icon icon-corner"></i>
+                </a>
+                <div class="nav_sub second hide" ms-class-show="nav==6">  
+                    <a class="show" href="https://www.qianshenghua.com/view/center-index.jsp#!/caiBuyRecord" ms-class-new="subnav==&#39;6-2&#39;" target="_self">购买记录<i></i></a>
+                    <a class="show" href="https://www.qianshenghua.com/view/center-index.jsp#!/caiRecord" ms-class-new="subnav==&#39;6-1&#39;" target="_self">饭票支付记录<i></i></a>
+                </div>
+            </li><a class="hide" ms-class-show="accountType==2" ms-if="accountType==2" ms-class-new="subnav==&#39;2-7&#39;" href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/6/0" target="_self">企金宝<i></i></a><a class="hide" ms-class-show="accountType==2" ms-if="accountType==2" ms-class-new="subnav==&#39;2-9&#39;" href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/6/8" target="_self">企金宝2号<i></i></a><div class="cmoney_ts hide" ms-class-show="accountType==2 &amp;&amp; prise.auditStep!=0 &amp;&amp; done == 1" ms-if="accountType==2 &amp;&amp; prise.auditStep!=0 &amp;&amp; done == 1">
+                {{noticeStr | html}}
+            </div><a href="https://www.qianshenghua.com/preOnlinePay.do" class="cmoney_btn cmoney_btn_rech hide" ms-class-show="accountType==2" ms-if="accountType==2">充值</a><a class="cmoney_tips hide" ms-class-show="accountType==2" ms-if="accountType==2" onclick="javascript:checkItems();">转出( 提现 )</a></avalon>
+    
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="keywords" content="钱生花,钱生花官网,花样年,合和年,qianshenghua,qsh,p2p,p2p网贷,p2p借贷平台,P2P网贷投标平台,人人贷,网络借贷,P2P信贷平台,网络小额贷款,合和年在线,互联网金融,P2P投标,债权转让,薪金贷,业主贷,生意贷,工薪贷">
+    <meta name="description" content="钱生花,钱生花官网,花样年,合和年,qianshenghua,qsh,钱生花是花样年集团倾力打造的互联网金融P2P信贷平台，为有小额贷款,薪金贷,业主贷,生意贷">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/center.css">    
+    <link rel="stylesheet" href="css/jquery-ui-1.10.1.css">    
+    <link rel="stylesheet" href="css/usercenter.css">
+    <link rel="stylesheet" href="css/ui-dialog.css">
+    <link rel="stylesheet" href="css/custody.css">
+     
+    <script type="text/javascript">
+    	var _mobilePhone = "176*****832";
+    	var _username =  "**607619832";
+    	_mobilePhone = _mobilePhone ? _mobilePhone : _username;
+    	var _avatar = "images/default-img.jpg" || "images/default-img.jpg";
+    	var _source = "1";
+    	var usrCustId = "-1";
+
+    	var CONFIG = {
+				accountType: 0
+		};
+    </script>  
+    <script src="/avalon.min.js"></script>
+    <script src="/jquery.js"></script>
+    <script src="/global.js"></script>
+    <script type="text/javascript" src="/module.js"></script>
+    <script src="/dialog-plus-min.js"></script>
+    <script src="/center-dialog.js"></script><link rel="stylesheet" href="/center-dialog.css">
+	<script src="/app.js"></script>   <!--  <script src="https://static.hehenian.com/p_v2/js/routes/center-route.js?v=6cb15ff"></script> -->
+</head>
+
+<body class="fixed-height-bd" avalonctrl="root">
+    <!-- 头部S -->
+    <div><!--ms-include--><!-- 头部S -->
+            <div class="top-bar-wrapper">
+                <div class="top-bar animate" id="topNavFixed" data-offset="120" style="top: 0px;">
+                    <div class="header_wrapper">
+                        <a href="https://www.qianshenghua.com/" target="_self" class="new-logo">
+                            <img src="images/logo4.gif" alt="彩付宝|花样年" width="415" height="56">                        </a>
+                        <!-- .login-menued 显示已登录/ 没有这登录or注册模式-->
+                        <div class="login">
+                            <div class="login_bar" style="display: none;">
+                                <i class="center_icon center_icon_mobile"></i>
+                                <p><a href="https://www.qianshenghua.com/account/login">登录</a><i>|</i><a href="https://www.qianshenghua.com/account/register">注册</a></p>
+                                <div class="login_app">
+                                    <a href="https://www.qianshenghua.com/about/app" class="login_s">
+                                        <i class="top_icon animate"></i>
+                                        APP
+                                        <span class="top_icon top_icon_down"></span>
+                                        <div class="login_eqcode">
+                                            <img src="images/app_qr.png" width="140" height="140" alt="钱生花app">
+                                            <p>钱生花客户端</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="login_in" style="display: block;">
+                                 <i class="center_icon center_icon_mobile"></i>
+                                 <div class="login_info">
+                                    <a href="https://www.qianshenghua.com/view/center-index.jsp">
+                                     <i class="top_icon top_icon_info"></i>
+                                     176*****832
+                                    </a>
+                                    <a href="https://www.qianshenghua.com/login/loginout.do" class="login_out">
+                                        退出
+                                    </a>
+                                 </div>
+                                 <div class="login_app">
+                                    <a href="https://www.qianshenghua.com/about/app" class="login_s">
+                                        <i class="top_icon"></i>
+                                        APP
+                                        <span class="top_icon top_icon_down animate"></span>
+                                        <div class="login_eqcode">
+                                            <img src="images/app_qr.png" width="140" height="140" alt="钱生花app">
+                                            <p>钱生花客户端</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="login_nav">
+                                <ul>
+                                    <li><a href="index.html" title="钱生花官网">首页</a></li>
+                                    <li><a href="woyaozhuanqian.html" title="我要投资">我要投资</a>
+                                        <div class="sub_login_nav">
+                                            <i></i>
+                                            <div class="in">
+                                                <a class="" href="woyaozhuanqian.html" title="定期专区"><b></b>定期专区</a>
+                                                <a class="" href="" title="散标专区"><b></b>散标专区</a>
+                                                <a class="" href="" title="债权转让"><b></b>债权转让</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--<li class=""><a href="https://www.qianshenghua.com/cupData/index" title="新手引导">基金</a></li>-->
+                                    <li class=""><a href="https://www.qianshenghua.com/aboutUs/2" title="新手引导">新手引导</a></li>
+                                    <li class=""><a href="https://www.qianshenghua.com/aboutUs/1" title="关于我们">关于我们</a></li>
+                                    <li><a href="https://www.qianshenghua.com/article/index" title="知识讲堂">知识讲堂</a></li>
+                                    <li class=""><a href="https://www.qianshenghua.com/herun/index" title="私募基金">私募基金</a></li>
+                                    <li><a href="https://www.qianshenghua.com/lend" title="我要借款">我要借款</a></li>
+                                    <li class="last_child on"><a href="https://www.qianshenghua.com/view/center-index.jsp">个人中心</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 头部 E--><!--ms-include-end--></div>
+    <!-- 头部 E-->
+    <div class="container">
+        <div class="content">
+            <!-- 中间容器 S -->
+            <div class="mod_wrapper ov-hide">
+                <!-- 左侧菜单栏S -->
+                <div class="fixed-height-left"><!--ms-include--><div class="side-nav">
+        <div class="user-avator">
+            <!-- <a href="javascript:;" title="编辑头像"> --><img src="images/avators.png"><!-- </a> -->
+            <a class="icon icon-level icon-level-0" href="https://www.qianshenghua.com/activity/vip.do" style="display: none;" title=""></a>
+        </div>
+        <p class="user-level" style="display: none;">
+            会员等级：<a class="cGold" title="查看详情" href="">非会员</a>
+        </p>
+        <p class="user-name mod_fa">
+            <span>176*****832</span>
+            <!--ms-if-->
+        </p>
+        <div class="cert-icons">
+            <!-- 通过验证 .icon-*-done  -->
+                <!--html866700896795--><a href="javascript:;" title="登录密码" onclick="HHN.dialog.updateLoginPsw();" class="icon icon-cpsw-done"></a><a href="https://www.qianshenghua.com/view/center-index.jsp#!/safe" title="手机认证" class="icon icon-cphone-done"></a><a href="javascript:;" title="实名认证" class="icon icon-cname-done"></a><a href="javascript:;" onclick="HHN.dialog.updateTradePsw();" title="交易密码" class="icon icon-cpsw-done"></a><a href="javascript:;" onclick="recharge(2);" title="银行卡号" class="icon icon-cbank-done"></a><a href="javascript:;" onclick="HHN.dialog.certEmail()" title="电子邮箱" class="icon icon-cmail"></a><!--html866700896795:end-->
+        </div>
+        <ul class="nav-list" id="fixed-nav">
+            <li class="on">
+                <a class="first" href="javascript:;">
+                    <i class="icon icon-self"></i> 我的账户
+                    <i class="icon icon-corner"></i>
+                </a>
+                <div class="nav_sub second hide show">  
+
+                    <a class="hide show" target="_self" onclick="javascript:recharge(1);">充值<i></i></a>
+                    <a class="hide show" target="_self" onclick="javascript:selectPayChannel(1);">提现<i></i></a>
+                    
+                    <!--ms-if-->
+                    <!--ms-if-->
+                    
+                    <a class="" target="_self" href="https://www.qianshenghua.com/view/center-index.jsp#!/trade/">资金明细<i></i></a>
+                    
+                    <a class="hide show" target="_self" href="https://www.qianshenghua.com/view/center-index.jsp#!/bankcard">银行卡管理<i></i></a>
+                    <a class="hide show" target="_blank" href="https://www.qianshenghua.com/chinapnr/registerChinaPnr.do">绑定托管账户<i></i></a>
+                    <a target="_self" href="https://www.qianshenghua.com/view/center-index.jsp#!/shop/address">地址管理<i></i></a>
+                </div>
+            </li>
+<!--             <li  ms-class-on="nav=='hs'">
+                <a class="first" href="#!/hsbank">
+                    <i class="icon icon-huis"></i> 徽商银行账户
+           
+                    <i class="icon icon-corner"></i>
+                </a>
+            </li> -->
+            <!--ms-if-->
+            <li>
+                <a class="first" href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/-1/0">
+                    <i class="icon icon-order"></i> 我的定期
+                    <i class="icon icon-corner"></i>
+                </a>
+                <div class="nav_sub second hide">
+                    <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/0/0" target="_self">爱定宝<b class="new_not" style="display: none;"></b><i></i></a>
+                    <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/1/0" target="_self">加薪宝<b class="new_not" style="display: none;"></b><i></i></a>
+                    <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/4/4" target="_self" style="display: none;">好运宝<i></i></a>
+                    <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/3/0" target="_self">日利宝<b class="new_not" style="display: none;"></b><i></i></a>
+                    <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/2/0" target="_self">月利宝<i></i></a>
+                    <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/5/0" target="_self">养老宝<b class="new_not" style="display: none;"></b><i></i></a>
+                    <!--ms-if-->
+<!--                <a ms-if="interested.smallMoney==228" class="" href="#!/xqk/9/PROFIT/0" ms-class-new="subnav=='2-8'" target="_self">小钱库<i></i></a> -->                    <!--ms-if-->                    
+                    <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/99/0" target="_self" style="display: none;">新手计划<i></i></a>
+                </div>
+            </li>
+            <li>
+                <a class="first vip-menu" href="https://www.qianshenghua.com/view/center-index.jsp#!/vip">vip</a>
+            </li>
+            <li style="display: none;">
+                <a class="first" href="javascript:;">
+                    <i class="icon icon-record"></i> 汇付交易
+                    <i class="icon icon-corner"></i>
+                </a>
+                <div class="nav_sub second hide">
+                    <div>
+                        <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/scattered" target="_self">投资记录<i></i></a>
+                        <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/debt" target="_self">债权转让<i></i></a>
+                        <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/setting" target="_self">自动投标<i></i></a>
+                    </div>    
+                    <a class="" href="https://www.qianshenghua.com/view/center-index.jsp#!/funds" target="_self">资金记录<i></i></a>                                
+                </div>
+            </li>
+            <li>
+                <a class="first" href="https://www.qianshenghua.com/view/center-index.jsp#!/planner">
+                    <i class="icon icon-invite"></i> 推荐人奖励
+           
+                    <i class="icon icon-corner"></i>
+                </a>
+            </li>
+            <li>
+                <a class="first" href="https://www.qianshenghua.com/view/center-index.jsp#!/coupon">
+                    <i class="icon icon-cardq"></i> 我的卡券
+           
+                    <i class="icon icon-corner"></i>
+                </a>
+            </li>
+            <li>
+                <a class="first" href="https://www.qianshenghua.com/view/center-index.jsp#!/safe">
+                    <i class="icon icon-safe"></i> 安全中心
+                    <i class="icon icon-corner"></i>
+                </a>
+            </li>
+            <li>
+                <a class="first" href="https://www.qianshenghua.com/view/center-index.jsp#!/shop/orders">
+                    <i class="icon icon-my-order"></i> 我的订单
+                    <i class="icon icon-corner"></i>
+                </a>
+            </li>
+            <li>
+                <a class="first" href="https://www.qianshenghua.com/login/loginout.do">
+                    <i class="icon icon-exit"></i> 退出
+                    <i class="icon icon-corner"></i>
+                </a>
+            </li>
+        </ul>
+    </div><!--ms-include-end--></div>
+                <!-- 左侧菜单栏E -->
+                <!--ms-view:--><div class="fixed-height-right" ui-view="" data-current-cache="false"><!-- 右侧栏S -->
+    <div class="mod_col_right">
+        <div class="center-banner">
+            <a href="https://www.qianshenghua.com/activity/vip.do">
+                <img src="images/banner.jpg" width="922" height="188" alt="钱生花vip抽奖活动">
+            </a>
+        </div>
+        <!--我的资产S-->
+        <div class="col-assets">
+            <!--ms-if-->
+            <div class="title">
+                <label>我的资产</label>
+                <span class="total mod_fa">0.00</span>
+                <span class="cmoney_mins">
+                    单位 : ( 元 )
+                </span>
+            </div>
+            <div class="cmoney_row">
+                <p class="cmoney_row_ye">
+                    <i class="center_icon center_icon_ye"></i>
+                    账户余额
+                    <b class="help-tip" ptitle="该资金仅适用于购买平台投标产品和散标"></b>
+                </p>
+                <p class="cmoney_total mod_fa">0.00</p>
+                <p class="cmoney_disabled">提现中金额：0.00</p>
+                <!-- 0 -->
+                <a href="javascript:;" class="cmoney_btn cmoney_btn_rech hide show" onclick="javascript:recharge(1);">充值</a>
+                <a class="cmoney_tips hide show" onclick="javascript:selectPayChannel(1);">转出( 提现 )</a>
+                <!-- 1 -->
+                <!--ms-if-->
+                <!--ms-if-->
+
+            </div>
+
+            <div class="cmoney_row">
+                <p class="cmoney_row_ye">
+                    <i class="center_icon center_icon_lc"></i>
+                    定期产品
+                </p>
+                <p class="cmoney_total mod_fa">0.00</p>
+                <p class="cmoney_disabled"></p>
+                <a href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/-1/" class="cmoney_btn hide show">查看</a>
+                <a href="https://www.qianshenghua.com/view/center-index.jsp#!/financial/6/" class="cmoney_btn hide">查看</a>
+            </div>
+
+            <div class="cmoney_row hide show">
+                <p class="cmoney_row_ye">
+                    <i class="center_icon center_icon_hy"></i>
+                    汇付天下余额
+                    <!-- <b class="help-tip" ptitle="该资金仅适用于购买平台散标"></b> -->
+                </p>
+                <p class="cmoney_total mod_fa">0.00</p>
+                <p class="cmoney_disabled"></p>
+                <!-- 0 -->
+                <a href="javascript:;" class="cmoney_btn cmoney_btn_rech hide show" onclick="javascript:recharge4huifu(1);">充值</a>
+                <a class="cmoney_tips hide show" onclick="javascript:selectPayChannel4huifu(1);">转出( 提现 )</a>
+            </div>
+
+        </div>
+        <!--我的资产E-->
+        <!-- 我的收益S -->
+        <div class="col-income" style="display: block;">
+            <div class="cin-title">
+                我的收益
+            </div>
+            <p class="cin_yestod">昨日收益（元） <b class="help-tip"></b></p>
+            <p class="cin_money mod_fa">0.00</p>
+            <a target="_blank" href="https://www.qianshenghua.com/fund/market.do" class="cin_rase">
+                <i class="center_icon center_icon_rase"></i>
+                提升收益
+            </a>
+            <div class="cin_history">
+                <p>历史累计收益（元） <b class="help-tip"></b></p>
+                <p class="mod_fa">0.00</p>
+            </div>
+            <div class="tip-dialog" style="top:40px;right:95px;">
+                <h3>昨日收益计算说明：持有中全部的钱生花投标产品，每日实际获得的收益总和。（以投资金额计算）</h3>
+                <p>昨日收益：投资金额 x 投标产品年化利率（历史） x 投标产品期限 ÷ 12 ÷ 投资天数（赎回日期 - 计息日期）</p>
+                <span class="cRed">（注意：已经赎回投标产品不参与计算、计息日期为购买第二天）</span>
+                <div class="tip">此数据仅供参考，实际收益以具体到账为准。</div>
+                <i></i>
+                <b></b>
+            </div>
+            <div class="tip-dialog" style="top:178px;right:95px;">
+                <h3>历史累计收益计算说明：是指持有中未到期的全部钱生花投标产品当前所获得的预计收益总和。（以投资金额计算）</h3>
+                <p>累计收益：投资金额 × 投标产品年化利率（历史） × 投标产品期限 ÷ 12 × 已投资天数（当前日期 - 计息日期）÷ 投资天数（赎回日期 - 计息日期）</p>
+                <span class="cRed">（注意：已经赎回投标产品不参与计算、计息日期为购买第二天）</span>
+                <div class="tip">此数据仅供参考，实际收益以具体到账为准。</div>
+                <i></i>
+                <b></b>
+            </div>
+        </div>
+        <div class="col-income col-income-pr" style="display: none;">
+            <div class="cin-title">
+                彩住宅购买数量
+            </div>
+            <p class="cin_yestod"></p>
+            <p class="cin_money mod_fa">0套</p>
+            <a href="https://www.qianshenghua.com/view/center-index.jsp#!/xqk/9/PROFIT/" class="cin_rase">
+               
+            </a>
+            <div class="cin_history cin_history_cz">
+                <p>累积发放饭票总额</p>
+                <p class="mod_fa">￥0元</p>
+            </div>
+        </div>
+        <!-- 我的收益E -->
+        <!-- 明星产品推荐 S-->
+        <div class="cbill cbill_pro clearfix" style="display: none;">
+
+                <input type="hidden" id="mounth" name="mounth" value="1"> 
+                <input type="hidden" id="rateId" name="rateId" value="50"> 
+                <input type="hidden" id="rate" name="rate" value="0.05"> 
+                <input type="hidden" id="productName" name="productName" value="月利宝">
+                <input type="hidden" id="coefficient" name="coefficient" value="100">
+                <input type="hidden" id="channel" name="channel" value="0">
+                <input type="hidden" id="sub_channel" name="sub_channel" value="2">
+
+            <div class="cbill_tit hot_pro_tit">
+                <i class="center_icon"></i>
+                明星产品推荐
+            </div>
+<!--             <div class="hot_pro_row" ms-click="proSel({
+                period:-1,
+                product_rate_id:288,
+                rate:.04,
+                product_name:'小钱库',
+                coefficient:100,
+                channel:0,
+                sub_channel:9
+            })">
+                <p class="name">
+                    小钱库
+                    <span class="meta">随存随取 每日复利</span>
+                </p>
+                <p class="rate">
+                    4.00%
+                    <span>稳定年化收益率</span>
+                </p>
+                <div class="radio" ms-visible="proAdb.product_rate_id==288"></div>
+            </div>
+ -->        <div class="hot_pro_row">
+                <p class="name">
+                    月利宝
+                    <span class="meta">月月加息 快速增值</span>
+                </p>
+                <p class="rate">
+                    10.50%
+                    <span>稳定年化收益率</span>
+                </p>
+                <div class="radio" style="display: block;"></div>
+            </div>
+
+            <div class="hot_pro_row">
+                <p class="name">
+                    养老投标24期
+                    <span class="meta">按月付息 养老无忧</span>
+                </p>
+                <p class="rate">
+                    10.00%
+                    <span>稳定年化收益率</span>
+                </p>
+                <div class="radio" style="display: none;"></div>
+            </div>
+            <div class="hot_pro_row hot_pro_form">
+                <ul>
+                    <li class="input"><input type="text" id="money" placeholder="100元起投"> </li>
+                    <li>账户余额： <span id="balanceSpan">0</span>元</li>
+                    <!-- <li>本息收益： <span id="expectedReturn">0</span>元</li> -->
+                    <li>计息日期： <span id="interestDate">2017-12-27</span></li>
+                    <li class="checkbox"> <input type="checkbox" id="checkbox" checked="checked"> 同意<a target="_blank" id="argLink" href="https://www.qianshenghua.com/agreement.do?channel=0&amp;subChannel=2">《月利宝服务协议》</a></li>
+                    <li class="btn"><a href="javascript:;" id="buyBtn">立刻购买</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 明星产品推荐 E-->
+        <!--我的账单 S-->
+        <div class="cbill" style="display: block;">
+            <div class="cbill_tit">
+                <i class="center_icon center_icon_bill"></i>
+                资金明细
+                <p>
+                    <a href="https://www.qianshenghua.com/view/center-index.jsp#!/trade/">查看更多&gt;&gt;</a>
+                    <!-- <a href="#">投标产品明细</a> -->
+                </p>
+            </div>
+            <div class="cbill_list">
+<!--                 <div class="cbill_list_tit">
+                    <div class="cbill_col cbill_col1">
+                        交易号
+                    </div>
+                    <div class="cbill_col cbill_conl3">
+                       交易时间
+                    </div>
+                    <div class="cbill_col cbill_conl4">
+                        类型
+                    </div>
+                    <div class="cbill_col cbill_conl2">
+                       交易金额
+                    </div>
+                    <div class="cbill_col cbill_conl5">
+                        交易说明
+                    </div>
+                </div>
+                <div class="cbill_list_tit cbill_list_t" ms-repeat-item="billList">
+                    <div class="cbill_col cbill_col1">
+                        {{item.typeName}}
+                    </div>
+                    <div class="cbill_col cbill_conl3 mod_fa">
+                        <span ms-if="item.type == 1">{{item.amount | parseNum(2)}}</span><span ms-if="item.type==2">0.00</span>
+                    </div>
+                    <div class="cbill_col cbill_conl4 mod_fa">
+                         <span ms-if="item.type == 2">{{item.amount | parseNum(2)}}</span><span ms-if="item.type==1">0.00</span>
+                    </div>
+                    <div class="cbill_col cbill_conl2">
+                        <span ms-if="item.remark">{{item.remark}}</span>
+                        <span ms-if="!item.remark">{{item.fromAccount}}</span>
+                    </div>
+                    <div class="cbill_col cbill_conl5">
+                        {{item.tradeTime | date("yyyy年MM月dd日")}}
+                    </div>
+                </div> -->
+                <table class="center-index-table">
+                    <tbody><tr>
+                        <th>交易号</th>
+                        <th>交易时间</th>
+                        <th>类型</th>
+                        <th>交易金额</th>
+                        <th style="text-align:center;">交易说明</th>
+                        <th>状态</th>
+                    </tr>
+                    <!--repeat301363441629--><tr>
+                        <td><span>949997</span></td>
+                        <td>2017-12-25 10:09</td>
+                        <td>充值</td>
+                        <td class="fa mlib_org">+100000.00</td>
+                        <td align="center"><span>尾号6514充值</span></td>
+                        <td><span>充值失败</span></td>
+                    </tr><!--repeat301363441629:end-->
+                </tbody></table>
+                <!-- <p class="mod_no_record hide" ms-class-show="billList.length == 0 && done == 1">{{billList.length}}{{done}}您暂时还没有账单记录哦！</p> -->
+<!--                 <table>
+                    <tr>
+                        <th>交易时间</th>
+                        <th>交易类型</th>
+                        <th>收入（元）</th>
+                        <th>支出（元）</th>
+                        <th>账户余额（元）</th>
+                        <th>资金渠道</th>
+                        <th>状态</th>
+                    </tr>
+                    <tr ms-repeat-item="billList">
+                        <td>{{item.tradeTime | date("yyyy-MM-dd H:m:s")}}</td>
+                        <td>{{item.typeName}}</td>
+                        <td><span ms-if="item.type == 1">+{{item.amount | parseNum(2)}}</span><span ms-if="item.type==2">0.00</span></td>
+                        <td><span ms-if="item.type == 2">-{{item.amount | parseNum(2)}}</span><span ms-if="item.type==1">0.00</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>-->
+            </div>
+        </div>
+        <!--我的账单 E-->
+    
+        <!-- 彩住宅 -->
+        <!--repeat542279599604:end-->
+
+    </div>
+    <!-- 右侧栏E -->
+</div>
+                <div class="fixed-height-lBorder"></div>
+            </div>
+            <!-- 中间容器 E -->
+            <!--footer S-->
+            <div><!--ms-include--><div class="mod_footer">
+            <div class="footer-con clearfix">
+                <div class="footer-menu clearfix">
+                    <dl class="about">
+                        <dt><i></i>关于我们</dt>
+                        <dd><a href="https://www.qianshenghua.com/aboutUs/1" title="公司介绍">公司介绍</a></dd>
+                        <dd><a href="https://www.qianshenghua.com/aboutUs/1" title="经营文化">经营文化</a></dd>
+                        <dd><a href="https://www.qianshenghua.com/aboutUs/1" title="企业背景">企业背景</a></dd>
+                        <dd><a href="https://www.qianshenghua.com/aboutUs/4" title="安全保障">安全保障</a></dd>
+                        <dd><a href="https://www.qianshenghua.com/aboutUs/2" title="新手引导">新手引导</a></dd>
+                        <dd><a href="https://www.qianshenghua.com/aboutUs/7" title="法律声明">法律声明</a></dd>
+                    </dl>
+                    <dl class="help">
+                        <dt><i></i>帮助中心</dt>
+                        <dd><a href="https://www.qianshenghua.com/aboutUs/3" title="常见问题">常见问题</a></dd>
+                        <dd><a href="https://www.qianshenghua.com/aboutUs/9" title="联系我们">联系我们</a></dd>
+                    </dl>
+                </div>
+                <div class="footer-focus">
+                    <h3>关注我们</h3>
+                    <ul class="clearfix">
+                        <li class="first">
+                            <a href="http://weibo.com/5655032686/profile?topnav=1&amp;wvr=6">
+                                <div class="img">
+                                    <img src="images/f_weibo.jpg" alt="">
+                                </div>
+                                <p>新浪微博</p>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="images/f_qecode.jpg" alt="">
+                            </div>
+                            <p>微信公众号</p>
+                        </li>
+                        <li>
+                            <a href="https://www.qianshenghua.com/about/app.do">
+                                <div class="img">
+                                    <img src="images/app_qr.png" alt="">
+                                </div>
+                                <p>移动客户端下载</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-service">
+                    <h3>客服热线</h3>
+                    <div class="phone clearfix">
+                        <i></i>
+                        <p>400-607-8787 <span>工作时间：8:30-20:30</span></p>
+                    </div>
+                    <div class="u-desk btn_udesk_im" onclick="HHN.uDesk(this)">
+                        <p>在线客服<span>(一对一专属服务)</span></p>
+                    </div>
+                    <ul class="online-service">
+                        <li> <i class="mail"></i> <a class="mail-link" href="mailto:kefu@fansfinancial.com">kefu@fansfinancial.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="content">
+                    <p class="friend-link"><strong>友情链接：</strong><a style="margin-left:0" href="http://www.cnfantasia.com/">花样年集团（中国）有限公司</a> | <a href="http://gw.colourlife.com/">彩生活服务集团有限公司</a> | <a href="http://www.jinfuzi.com/">金斧子</a> | <a href="http://www.wdzj.com/">网贷之家</a></p>
+                    <ul class="clearfix">
+                        <li>Copyright ©2013-2017 www.qianshenghua.com</li>                        
+                        <li>深圳市彩付宝科技有限公司</li>
+                        <li>花样年集团金融战略合作企业（港联交所上市企业HK1777）</li>
+                        <li>粤ICP备14000649号-4</li>
+                    </ul>
+                    <p class="tip">温馨提示：投资者应该仔细阅读定期产品的法律文件，了解产品风险和收益特征（包括系统性风险和特定产品所持有的投资风险等）。 投资者应根据自身资产情况、风险承受能力选择适合自己的定期产品。
+                    </p>
+                </div>
+            </div>
+    </div><!--ms-include-end--></div>
+            <!-- footer E -->
+        </div>
+    </div>
+    <div class="fixed-server" id="fixed-mbar">
+        <a href="javascript:;" class="phone">
+            <div class="pop">
+                电话咨询：
+                <p>400-607-8787</p>
+                <span>早8:30-晚20:00</span>
+                <i></i><b></b>
+            </div>
+        </a>
+        <a class="qq btn_udesk_im" href="javascript:;" onclick="HHN.uDesk(this)">
+            <div class="pop" style="top:-4px;" id="btnUdeskIm">
+                <p>在线客服</p>
+                <i></i><b></b>
+            </div>
+        </a>
+        <a href="javascript:;" class="weixin">
+            <div class="pop">
+                <span class="pop_qr">
+                    <img height="142" src="/qr_code_zf.jpg" width="142">
+                    <span class="pop_kf">钱生花客服微信</span>
+                </span>
+                <span class="pop_qrg">
+                    <img height="142" src="images/weibo3.png" width="142">
+                    <span class="pop_lc">钱生花投标公众号</span>
+                </span>  
+                <i></i><b></b>
+            </div>
+        </a>
+        <a target="_blank" href="http://weibo.com/5655032686/profile?topnav=1&amp;wvr=6" class="weibo">
+            <div class="pop" style="top:-70px;padding:8px;">
+                <span class="pop_qr">
+                    <img height="142" src="images/weibo_qr.png" width="142">
+                    <span class="pop_kf">钱生花官方微博</span>
+                </span>
+                <i></i><b></bwo
+            </div>
+        </a>
+        <a href="javascript:;" class="top" style="display: none;"></a>
+    </div>  
+    
+    <script src="/buy.js"></script>    <script src="/distpicker.data.js"></script>    
+    <script src="/distpicker.js"></script>    
+    <script>
+        if(HHN.getCookie('principal')==1) {
+            $('.pop_qr').css('display','inline-block');
+        }
+    </script>
+    
+
+
+<div class="popover"><p></p><i></i><em></em></div></body></html>
